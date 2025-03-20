@@ -7,9 +7,9 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-<footer class="bg-lightblue text-white">
+<footer>
     <!-- Sezione Blu con Icone -->
-    <div class="bg-blue-600 py-4 flex justify-center space-x-8">
+    <div class="bg-primary d-flex justify-content-center align-items-center gap-4 py-4">
         <a href="#" class="flex items-center text-white space-x-2">
             <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital Comics" style="width: 30px;">
             <span>Digital Comics</span>
@@ -23,7 +23,7 @@
             <span>Subscription</span>
         </a>
         <a href="#" class="flex items-center text-white space-x-2">
-            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="Comic Shop Locator" style="width: 30px;">
+            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="Comic Shop Locator" style="width: 20px;">
             <span>Comic Shop Locator</span>
         </a>
         <a href="#" class="flex items-center text-white space-x-2">
@@ -33,9 +33,10 @@
     </div>
 
     <!-- Sezione Footer con Logo e Link -->
-    <div class="bg-lightblue py-10 px-8 flex justify-between">
+     <div class="">
+    <div class="">
         <!-- Sezione Link -->
-        <div class="flex space-x-16">
+        <div class="d-flex justify-content-center">
             <div>
                 <h4 class="font-bold text-lg mb-2">DC COMICS</h4>
                 <ul class="space-y-3 text-gray-400">
@@ -68,19 +69,23 @@
 
         <!-- Logo DC -->
         <div class="opacity-20">
-            <img src="{{ Vite::asset('resources/img/dc-logo-bg.png')}}" alt="DC Logo" class="w-16">
+            <img src="{{ Vite::asset('resources/img/dc-logo-bg.png')}}" alt="DC Logo" style="width: 100px;">
         </div>
+    </div>
     </div>
 
     <!-- Pulsante Sign-Up e Social Icons -->
-    <div class="bg-gray-900 py-4 flex justify-between items-center px-8">
+    <div class="final-footer">
+        <div class="d-flex justify-content-space-between">
         <button class="bg-blue-600 px-6 py-2 text-white font-bold">SIGN-UP NOW!</button>
-        <div class="flex space-x-4">
-            <a href="#"><img src="path/to/facebook.png" alt="Facebook" class="h-8"></a>
-            <a href="#"><img src="path/to/twitter.png" alt="Twitter" class="h-8"></a>
-            <a href="#"><img src="path/to/instagram.png" alt="Instagram" class="h-8"></a>
-            <a href="#"><img src="path/to/youtube.png" alt="YouTube" class="h-8"></a>
+        <div class="d-flex gap-3">
+            <h5 class="text-primary">FOLLOW US!</h5>
+            <a href="#"><img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="Facebook" class="h-8"></a>
+            <a href="#"><img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="Twitter" class="h-8"></a>
+            <a href="#"><img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="Pinterest" class="h-8"></a>
+            <a href="#"><img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="YouTube" class="h-8"></a>
         </div>
+    </div>
     </div>
 </footer>
 

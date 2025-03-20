@@ -9,14 +9,57 @@
 
 // Jumbotron
 .jumbotron {
-    background-image: ('../img/jumbotron.jpg');
+    background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     background-position: center top;
     padding: 200px 0;
 }
 
+
+// Card
+.series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adatta le colonne automaticamente */
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.comic {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.thumb img {
+    width: 100%;
+    height: 180px; /* Altezza fissa per uniformità */
+    object-fit: cover; /* Evita distorsioni */
+    border-radius: 8px;
+}
+
+/* Adatta il layout per schermi più grandi */
+@media (min-width: 768px) {
+    .series-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 card per riga su tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .series-container {
+        grid-template-columns: repeat(6, 1fr); /* 6 card per riga su schermi grandi */
+    }
+}
+
+// Footer
+
 .bg-lightblue {
     background-color: #add8e6;
+}
+
+a {
+    text-decoration: none;
 }
 
 .footer a {
@@ -27,4 +70,16 @@
 .footer a:hover {
     color: black;
     text-decoration: underline;
+}
+
+.img-footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    padding: 200px 0;
+
+}
+
+.final-footer {
+    background-color: rgb(37, 36, 36);
 }
