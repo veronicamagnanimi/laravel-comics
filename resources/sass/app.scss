@@ -6,3 +6,25 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+// Jumbotron
+.jumbotron {
+    background-image: ('../img/jumbotron.jpg');
+    background-size: cover;
+    background-position: center top;
+    padding: 200px 0;
+}
+
+.bg-lightblue {
+    background-color: #add8e6;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
